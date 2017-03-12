@@ -13,9 +13,7 @@
 
 <body>
     <h1 id="head">United States<br>Presidents</h1>
-	${president}
-	<div id= "back"><a href="pres.do?back=back&id=${president.termNumber}">back</a></div>
-	<div id= "next"><a href="pres.do?next=next&id=${president.termNumber}">next</a></div>
+	
     <div id="mainContainer">
         <div id="selectName">
             <form method="POST" action="showPres.do">

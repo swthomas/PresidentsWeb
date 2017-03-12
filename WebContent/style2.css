@@ -48,47 +48,55 @@ h3 {
     background-color: darkgrey
 }
 
-#selectTerm {
+#selectParty {
 	height: 25px;
-    width: 30%;
+    width: 15%;
 /*     margin-left: 400px;
  */    display: inline-block;
     text-align: center;
     float: none;
 }
 
-#selectParty {
-    width: 30%;
+#selectTerm {
+    width: 15%;
 /*     margin-left: 400px;
  */    float: left;
     text-align: center;
 }
 
-#selectName {
-    width: 30%;
-/*     margin-right: 400px;
- */    float: right;
+#selectName{
+    width: 15%;
+   margin-left: 20%;
+   float: left;
     text-align: center;
 }
 #back{
+	font-color:red;
 	height: 50px;
 	width: 50px;
 	float: left;
-	font-size: 3em;
+	font-size: 6em;
+	margin-left:5%;
+	
 	
 }
 #next{
 	height: 50px;
 	width: 50px;
 	float: right;
-	font-size: 3em;
+	font-size: 6em;
+	margin-right: 5%;
 }
 
 #next > a, #back > a{
+	color:lightgrey;
 	text-decoration: none;
 }
 #presidentInfo{
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 8%;
 	clear: both;
+	font-size: 2em;
+	color: white;
+	margin-bottom:200 px;
 }

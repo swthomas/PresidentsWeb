@@ -30,6 +30,7 @@ public class PresidentServlet extends HttpServlet {
 		if(next!=null){
 			System.out.println("next" + next);
 			System.out.println("id" + id);
+			try{
 			String term = Integer.parseInt(id) + 1 + "";
 			if( term.equals("46")){
 				term="1";
@@ -39,10 +40,18 @@ public class PresidentServlet extends HttpServlet {
 			req.setAttribute("president", p);
 			req.setAttribute("presList", dao.getAllPresidents());
 			req.getRequestDispatcher("/select.jsp").forward(req, resp);
+			}
+			catch(Exception e){
+				req.setAttribute("president", dao.getTerm("1"));
+				req.setAttribute("presList", dao.getAllPresidents());
+				req.getRequestDispatcher("/select.jsp").forward(req, resp);
+				
+			}
 		}
 		else if (back!=null){
 			System.out.println("back" + back);
 			System.out.println("id" + id);
+			try{
 			String term = Integer.parseInt(id) - 1 + "";
 			if( term.equals("0")){
 				term="45";
@@ -52,6 +61,13 @@ public class PresidentServlet extends HttpServlet {
 			req.setAttribute("president", p);
 			req.setAttribute("presList", dao.getAllPresidents());
 			req.getRequestDispatcher("/select.jsp").forward(req, resp);
+			}
+			catch(Exception e){
+				req.setAttribute("president", dao.getTerm("1"));
+				req.setAttribute("presList", dao.getAllPresidents());
+				req.getRequestDispatcher("/select.jsp").forward(req, resp);
+				
+			}
 		}
 		else if (id!=null){
 			President p = dao.getTerm(id);
@@ -76,9 +92,7 @@ public class PresidentServlet extends HttpServlet {
 		System.out.println(party);
 
 		if (name != null) {
-			System.out.println("pres by name");
 			President p = dao.getTerm(name);
-			System.out.println(p);
 			req.setAttribute("president", p);
 			req.setAttribute("presList", dao.getAllPresidents());
 			req.getRequestDispatcher("/select.jsp").forward(req, resp);
@@ -86,14 +100,14 @@ public class PresidentServlet extends HttpServlet {
 
 			System.out.println("pres by party");
 			List<President> p = dao.getParty(party);
-			System.out.println(p);
 			req.setAttribute("presidentList", p);
+			req.setAttribute("president", null);
 			req.setAttribute("presList", dao.getAllPresidents());
 			req.getRequestDispatcher("/select.jsp").forward(req, resp);
+			
+			
 		} else if (term != null) {
-			System.out.println("pres by term");
 			President p = dao.getTerm(term);
-			System.out.println(p);
 			req.setAttribute("president", p);
 			req.setAttribute("presList", dao.getAllPresidents());
 			req.getRequestDispatcher("/select.jsp").forward(req, resp);
