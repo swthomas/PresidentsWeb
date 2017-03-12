@@ -1,0 +1,72 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/2/20/Americanflags.jpg");
+}
+
+h2 {
+    color: lightgrey;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    color: lightgrey;
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#head {
+    color: white;
+    font-size: 125px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.selector {
+    color: black;
+    font-size: 25px;
+    background-color: darkgrey;
+}
+
+.button1 {
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: darkgrey
+}
+
+.button {
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    background-color: darkgrey
+}
+
+#selectName {
+    width: 33%;
+    margin-top: -30px;
+    margin-left: 175px;
+    display: inline-block;
+    text-align: center;
+    float: none;
+}
+
+#selectParty {
+    width: 33%auto;
+    margin-left: 50px;
+    float: left;
+    text-align: center;
+}
+
+#selectTerm {
+    width: 33%auto;
+    margin-right: 50px;
+    float: right;
+    text-align: center;
+}

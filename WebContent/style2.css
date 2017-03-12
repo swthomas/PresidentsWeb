@@ -1,0 +1,94 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/2/20/Americanflags.jpg");
+}
+
+h2 {
+    color: lightgrey;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    color: lightgrey;
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#head {
+    color: white;
+    font-size: 125px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.selector {
+    color: black;
+    font-size: 10px;
+    background-color: darkgrey;
+}
+
+.button1 {
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: darkgrey
+}
+
+.button {
+    color: black;
+    border-radius: 10px;
+    width: auto;
+    margin-top: 30px;
+    font-size: 10px;
+    background-color: darkgrey
+}
+
+#selectTerm {
+	height: 25px;
+    width: 30%;
+/*     margin-left: 400px;
+ */    display: inline-block;
+    text-align: center;
+    float: none;
+}
+
+#selectParty {
+    width: 30%;
+/*     margin-left: 400px;
+ */    float: left;
+    text-align: center;
+}
+
+#selectName {
+    width: 30%;
+/*     margin-right: 400px;
+ */    float: right;
+    text-align: center;
+}
+#back{
+	height: 50px;
+	width: 50px;
+	float: left;
+	font-size: 3em;
+	
+}
+#next{
+	height: 50px;
+	width: 50px;
+	float: right;
+	font-size: 3em;
+}
+
+#next > a, #back > a{
+	text-decoration: none;
+}
+#presidentInfo{
+	text-align: center;
+	margin-top: 10%;
+	clear: both;
+}
