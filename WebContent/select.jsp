@@ -77,11 +77,9 @@
 				style="width: 20%;" src="PresPics/${president.picture }" /></a>
 			<br>
 			<br>
-			<div id="presInfo">
 				${president.termNumber }. ${president.name } <br>
 				${president.party}<br> ${president.startYear }-${president.endYear }<br>
 				${president.fact }
-			</div>
 
 		</c:if>
 
