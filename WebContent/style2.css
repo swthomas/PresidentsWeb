@@ -83,10 +83,11 @@ body {
 	clear: both;
 	font-size: 2em;
 	margin-bottom: 200 px;
+	color:white;
 }
-#presInfo{
+/* #presInfo{
 	background: lightgrey;
 	border: 2px solid black;
 	border-radius: 10px;
 	color: black;
-	}
+	} */
