@@ -83,10 +83,6 @@ body {
 	clear: both;
 	font-size: 2em;
 	margin-bottom: 200 px;
-	background: lightgrey;
-	border: 2px solid black;
-	border-radius: 10px;
-	color: black;
 }
 #presInfo{
 	background: lightgrey;
