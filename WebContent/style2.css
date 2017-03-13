@@ -77,16 +77,16 @@ body {
 	text-decoration: none;
 }
 
-#president{
+#presidentInfo {
 	text-align: center;
 	margin-top: 8%;
 	clear: both;
 	font-size: 2em;
 	margin-bottom: 200 px;
 }
-/* #presInfo{
+#presInfo{
 	background: lightgrey;
 	border: 2px solid black;
 	border-radius: 10px;
 	color: black;
-	} */
+	}

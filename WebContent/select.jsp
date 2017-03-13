@@ -67,7 +67,7 @@
 
 		</div>
 	</div>
-	<div id="president">
+	<div id="presidentInfo">
 		<c:forEach var="president" items="${presidentList}">
 			<a href="getPresident.do?id=${president.termNumber }"><img
 				style="width: 20%;" src="PresPics/${president.picture }" /></a>
@@ -77,9 +77,11 @@
 				style="width: 20%;" src="PresPics/${president.picture }" /></a>
 			<br>
 			<br>
+			<div id="presInfo">
 				${president.termNumber }. ${president.name } <br>
 				${president.party}<br> ${president.startYear }-${president.endYear }<br>
 				${president.fact }
+			</div>
 
 		</c:if>
 
