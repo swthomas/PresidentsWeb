@@ -23,9 +23,11 @@ public class PresidentServlet extends HttpServlet {
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String next = req.getParameter("next");
+		String pres = req.getParameter("pres");
 		String back = req.getParameter("back");
 		String id = req.getParameter("id");
-		System.out.println(next);
+		System.out.println("suckgggg");
+		System.out.println(pres);
 		System.out.println(id);
 		if(next!=null){
 			System.out.println("next" + next);
@@ -75,9 +77,18 @@ public class PresidentServlet extends HttpServlet {
 			req.setAttribute("president", p);
 			req.setAttribute("presList", dao.getAllPresidents());
 			req.getRequestDispatcher("/select.jsp").forward(req, resp);
-		}else{ 
+		}
+		else if(pres!=null){
+			System.out.println("*********************************");
+			req.setAttribute("presidentList", dao.getAllPresidents());
+			req.setAttribute("presList", dao.getAllPresidents());
+			req.getRequestDispatcher("/select.jsp").forward(req, resp);
+
+		}
+		else{ 
+			System.out.println("tesssst");
 		req.setAttribute("presList", dao.getAllPresidents());
-		req.getRequestDispatcher("/firstPage.jsp").forward(req, resp);
+		req.getRequestDispatcher("/index.html").forward(req, resp);
 		}
 	}
 

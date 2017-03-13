@@ -70,3 +70,10 @@ h3 {
     float: right;
     text-align: center;
 }
+#presInfo{
+	background: lightgrey;
+	border: 2px solid black;
+	border-radius: 10px;
+	color: black;
+	}
+}

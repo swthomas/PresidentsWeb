@@ -1,86 +1,70 @@
 body {
-    background-image: url("https://upload.wikimedia.org/wikipedia/en/2/20/Americanflags.jpg");
-}
-
-h2 {
-    color: lightgrey;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 10px;
-
-}
-
-h3 {
-    color: lightgrey;
-    font-size: 75px;
-    text-align: center;
-    margin-bottom: 10px;
+	background-image:
+		url("https://upload.wikimedia.org/wikipedia/en/2/20/Americanflags.jpg");
 }
 
 #head {
-    color: white;
-    font-size: 125px;
-    text-align: center;
-    margin-top: 35px;
+	color: white;
+	font-size: 125px;
+	text-align: center;
+	margin-top: 35px;
 }
 
 .selector {
-    color: black;
-    font-size: 10px;
-    background-color: darkgrey;
+	color: black;
+	font-size: 10px;
+	background-color: darkgrey;
 }
 
 .button1 {
-    color: black;
-    border-radius: 10px;
-    width: auto;
-    margin-top: 20px;
-    font-size: 20px;
-    background-color: darkgrey
+	color: black;
+	border-radius: 10px;
+	width: auto;
+	margin-top: 20px;
+	font-size: 20px;
+	background-color: darkgrey
 }
 
 .button {
-    color: black;
-    border-radius: 10px;
-    width: auto;
-    margin-top: 30px;
-    font-size: 10px;
-    background-color: darkgrey
+	color: black;
+	border-radius: 10px;
+	width: auto;
+	margin-top: 30px;
+	font-size: 10px;
+	background-color: darkgrey
 }
 
 #selectParty {
 	height: 25px;
-    width: 15%;
-/*     margin-left: 400px;
- */    display: inline-block;
-    text-align: center;
-    float: none;
+	width: 15%;
+	display: inline-block;
+	text-align: center;
+	float: none;
 }
 
 #selectTerm {
-    width: 15%;
-/*     margin-left: 400px;
- */    float: left;
-    text-align: center;
+	width: 15%;
+	float: left;
+	text-align: center;
 }
 
-#selectName{
-    width: 15%;
-   margin-left: 20%;
-   float: left;
-    text-align: center;
+#selectName {
+	width: 15%;
+	margin-left: 20%;
+	float: left;
+	text-align: center;
 }
-#back{
-	font-color:red;
+
+#back {
+	font-color: red;
 	height: 50px;
 	width: 50px;
 	float: left;
 	font-size: 6em;
-	margin-left:5%;
-	
-	
+	margin-left: 5%;
 }
-#next{
+
+#next {
 	height: 50px;
 	width: 50px;
 	float: right;
@@ -88,15 +72,25 @@ h3 {
 	margin-right: 5%;
 }
 
-#next > a, #back > a{
-	color:lightgrey;
+#next>a, #back>a {
+	color: lightgrey;
 	text-decoration: none;
 }
-#presidentInfo{
+
+#presidentInfo {
 	text-align: center;
 	margin-top: 8%;
 	clear: both;
 	font-size: 2em;
-	color: white;
-	margin-bottom:200 px;
+	margin-bottom: 200 px;
+	background: lightgrey;
+	border: 2px solid black;
+	border-radius: 10px;
+	color: black;
 }
+#presInfo{
+	background: lightgrey;
+	border: 2px solid black;
+	border-radius: 10px;
+	color: black;
+	}

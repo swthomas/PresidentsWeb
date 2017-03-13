@@ -9,27 +9,18 @@
 <link rel="stylesheet" href="style2.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Presidents Home</title>
-<link rel="stylesheet" href="president.css">
+
 </head>
 
 <body>
 	<h1 id="head">United States Presidents</h1>
-	<%-- 	<c:if test="${presidentList==null }"> --%>
 	<div id="back">
 		<a href="pres.do?back=back&id=${president.termNumber}">&lt</a>
 	</div>
 	<div id="next">
 		<a href="pres.do?next=next&id=${president.termNumber}">&gt</a>
 	</div>
-	<%-- </c:if> --%>
-<%-- 		<c:if test="${presidentList!=null }">
-	<div id="back">
-		<a href="pres.do?back=back&nextParty=${presidentList[0].party}">&lt</a>
-	</div>
-	<div id="next">
-		<a href="pres.do?next=next&id=${presidentList[0].party}">&gt</a>
-	</div>
-	</c:if> --%>
+	
 	<div id="mainContainer">
 
 
@@ -87,13 +78,12 @@
 			<br>
 			<br>
 			
-			${president.termNumber }. ${president.name }	<br>
-			${president.party}<br>
-			${president.startYear }-${president.endYear }<br>
-			${president.fact }
+				${president.termNumber }. ${president.name } <br>
+				${president.party}<br> ${president.startYear }-${president.endYear }<br>
+				${president.fact }
 			
-			
-			</c:if>
+
+		</c:if>
 
 	</div>
 </body>
